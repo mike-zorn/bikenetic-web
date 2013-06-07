@@ -1,6 +1,5 @@
 #!/usr/local/bin/python3
-import http.server
-import socketserver
+import json
 from urllib.request import urlopen
 
 def getToken():
@@ -11,14 +10,19 @@ def getToken():
     data = urlopen(url)
     return data.readline().decode("utf-8")
 
-tokenfile = open('access-token.js', 'w')
-tokenfile.write("BIKENETIC = {token:\"%s\"}" % getToken())
-tokenfile.close()
+def getPics(token):
+    url = 'https://graph.facebook.com/134155870026183/photos?' + \
+        'fields=name,images&' + token
+    response = urlopen(url).readlines()
+    loaded = json.loads(''.join([line.decode("utf-8") for line in response]))
+    filtered = [{
+        'caption': picture["name"], 
+        'image': [image['source'] for image in picture['images'] \
+                if image['height'] > 1000][0]
+        }
+        for picture in loaded['data'] if any(
+        [image for image in picture['images'] if image["height"] > 1000])]
 
-PORT = 80
+    return filtered
 
-Handler = http.server.SimpleHTTPRequestHandler
-
-httpd = socketserver.TCPServer(("", PORT), Handler)
-
-httpd.serve_forever()
+print(getPics(getToken()))
