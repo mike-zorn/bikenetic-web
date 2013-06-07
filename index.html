@@ -1,0 +1,26 @@
+<head>
+    <title>Bikenetic Facebook Integration</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script src="/access-token.js"></script>
+    <script>
+      function getPictures(token) {
+          pictureGetUrl = 'https://graph.facebook.com/134155870026183/photos?'
+          + token;
+          $.ajax({
+              url: pictureGetUrl
+          }).done(function(json){
+              var data = jQuery.parseJSON(json);
+              data.data.forEach(function(item) {
+                  $("<img src=\""+item.images[0].source+"\">").appendTo('.pics');
+              });
+          });
+      }
+
+      getPictures();
+    </script>
+</head>
+
+<body>
+<div class="pics"></div>
+</body>
