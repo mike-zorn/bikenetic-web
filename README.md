@@ -14,13 +14,17 @@ about facebook photos
 
 * To look at photos, try
 
+    ```
     python -m SimpleHTTPServer 4000
+    ```
 
   and navigate to ```localhost:4000```
 
 * To download metadata, try
 
+    ```
     python facebook-puller.py  
+    ```
 
 
 TODO
