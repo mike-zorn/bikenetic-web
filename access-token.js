@@ -1,1 +1,0 @@
-BIKENETIC = {token:"access_token=148538191983815|BggOesoDMJjmhPvph0_3B36M39c"}

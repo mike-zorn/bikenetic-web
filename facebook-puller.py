@@ -23,6 +23,11 @@ def getPics(token):
         for picture in loaded['data'] if any(
         [image for image in picture['images'] if image["height"] > 1000])]
 
-    return filtered
+    return json.dumps(filtered)
 
-print(getPics(getToken()))
+def getAlert(token):
+    pass
+    #get alert here
+
+photo_outfile = open('photo_headlines.json', 'w');
+photo_outfile.write(getPics(getToken()))
