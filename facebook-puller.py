@@ -5,9 +5,10 @@ import re
 from urllib.request import urlopen
 
 def getToken():
+    client_secret = open('client_secret', 'r').readline()
     url = 'https://graph.facebook.com/oauth/access_token?' +\
         'client_id=148538191983815' +\
-        '&client_secret=a156275a5d2a3a9c018d45dab8a3c78f' +\
+        '&client_secret=' + client_secret +\
         '&grant_type=client_credentials'
     data = urlopen(url)
     return data.readline().decode("utf-8")

@@ -9,8 +9,8 @@ Downloading
 Usage
 -----
 
-Two purposes are server here, a demo for displaying pictures gotten from the facebook api and saving pertinent metadata
-about facebook photos
+Two purposes are server here, a demo for displaying pictures gotten from the
+facebook api and saving pertinent metadata about facebook photos
 
 * To look at photos, try
 
@@ -20,14 +20,9 @@ about facebook photos
 
   and navigate to ```localhost:4000```
 
-* To download metadata, try
+* To download metadata, first put the facebook client secret into a file called
+  client_secret, then try
 
     ```
     python facebook-puller.py  
     ```
-
-
-TODO
-----
-
-* Get the app secret out of the repo
