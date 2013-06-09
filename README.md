@@ -31,4 +31,3 @@ TODO
 ----
 
 * Get the app secret out of the repo
-* Add alert puller

@@ -1,5 +1,7 @@
 #!/usr/local/bin/python3
 import json
+import time
+import re
 from urllib.request import urlopen
 
 def getToken():
@@ -10,11 +12,14 @@ def getToken():
     data = urlopen(url)
     return data.readline().decode("utf-8")
 
+def getJsonFromFacebook(url):
+    response = urlopen(url).readlines()
+    return json.loads(''.join([line.decode("utf-8") for line in response]))
+
 def getPics(token):
     url = 'https://graph.facebook.com/134155870026183/photos?' + \
         'fields=name,images&' + token
-    response = urlopen(url).readlines()
-    loaded = json.loads(''.join([line.decode("utf-8") for line in response]))
+    loaded = getJsonFromFacebook(url)
     filtered = [{
         'caption': picture["name"], 
         'image': [image['source'] for image in picture['images'] \
@@ -25,9 +30,24 @@ def getPics(token):
 
     return json.dumps(filtered)
 
+def getTodaysMessages(token):
+    url = 'https://graph.facebook.com/109198659188571/posts?' + \
+        'fields=message&since=yesterday&' + token
+    return getJsonFromFacebook(url)
+
 def getAlert(token):
-    pass
-    #get alert here
+    todaysMessages = getTodaysMessages(token)
+    alerts = [ message for message in todaysMessages['data'] \
+            if re.match('#alert', message['message']) ]
+    if any(alerts):
+        return json.dumps(alerts[0])
+    else:
+        return '{}'
+
+token = getToken()
 
 photo_outfile = open('photo_headlines.json', 'w');
-photo_outfile.write(getPics(getToken()))
+photo_outfile.write(getPics(token))
+
+alert_outfile = open('alert.json', 'w');
+alert_outfile.write(getAlert(token))
