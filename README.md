@@ -14,15 +14,15 @@ facebook api and saving pertinent metadata about facebook photos
 
 * To look at photos, try
 
-    ```
+    ``
     python -m SimpleHTTPServer 4000
-    ```
+    ``
 
-  and navigate to ```localhost:4000```
+  and navigate to ``localhost:4000``
 
 * To download metadata, first put the facebook client secret into a file called
   client_secret, then try
 
-    ```
+    ``
     python facebook-puller.py  
-    ```
+    ``
