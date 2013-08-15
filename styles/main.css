@@ -1,0 +1,487 @@
+/*
+
+	00. Body and things that we don't change
+	01. Header
+	02. Navigation
+	03. About me/Portfolio Section
+	04. Works Grid
+	05. About Section
+	06. Contact Section
+	07. Twitter Module
+	08. Social Module
+	09. Footer
+	
+	
+*/
+
+
+/* 00. BODY AND WRAPPER ================================================== */
+
+body, html {
+	margin:0px auto;
+	width:100%;
+	background-color:#FFF;
+	color:#333;
+	font-family:'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
+	font:12px;
+	position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;}
+
+
+#wrapper {
+	position:absolute;
+	top:100%;
+	width:100%;}
+
+.inner {
+	width:100%;
+	max-width:870px;
+	margin:0px auto;
+	text-align:center;
+	display:block;}
+
+.title_line {
+    border-bottom: 1px solid #D5D5D5;
+    display: block;
+    height: 1px;
+    margin: auto;
+    width: 90px;
+}
+
+.lead {
+	font-family:'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
+	text-align:center;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	color:#BBB;
+	margin-bottom:0px;
+	padding:30px 30px 30px 30px;
+	font-size:22px;}
+
+.lead a {
+	color:#00aed7;
+	text-decoration: none;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.lead a:hover {
+	color:#777;
+}
+
+/* 01. HEADER ================================================== */
+
+
+header {
+	width:100%;
+	height:100%;
+	text-align:center;
+	color:#FFF;
+	position:absolute;
+	background:url('http://sphotos-f.ak.fbcdn.net/hphotos-ak-ash4/466076_379895285452239_555699419_o.jpg') no-repeat center center fixed;  /* DONT FORGET TO CHANGE IT TOO IN MEDIA.CSS */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment : fixed;  /* FIXED FOR IE */
+    min-width: 100%;
+    min-height: 100%;
+    }
+ 
+
+header h1 {
+	font-family:'Changa One', helvetica-neue, helvetica, arial, sans-serif;
+	font-size:80px;
+	text-transform:uppercase;
+	letter-spacing:5px;
+	font-weight:lighter;
+	position:relative;
+	margin:18% auto 0px auto;
+	z-index: 999;}
+
+.roles {
+    font-family:      'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
+    font-size:         36pt;  
+    font-weight:       bold;  
+    display:           inline-block;
+    line-height:       70px;
+    height:            70px;
+    vertical-align:    middle;
+    overflow:          hidden;
+    color:             #FFFFFF;
+    padding: 0 10px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+    z-index: 999;
+}
+
+.roles div {
+    height:             70px;
+    -webkit-transition: margin-top 0.8s ease-in-out;
+    -moz-transition:    margin-top 0.8s ease-in-out;
+    -o-transition:      margin-top 0.8s ease-in-out;
+    transition:         margin-top 0.8s ease-in-out;
+}
+
+
+#tab a{
+	width:200px;
+	padding:20px 10px;
+	background-color: #FFFFFF;
+	color:#070707;
+	margin:0px auto;
+	vertical-align:middle;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:12pt;
+	font-weight: bold;
+	letter-spacing:1px;
+	position:absolute;
+	bottom:0px;
+	left:50%;
+	margin-left:-80px;
+	text-decoration:none;
+	transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+	-o-transition: all 0.7s;}
+
+#tab a:hover {
+	background-color:#00C255;
+	color:#FFFFFF;
+}
+
+
+/* 02. NAVIGATION ================================================== */
+
+
+nav {
+	width:100%;
+	height:60px;
+	background-color:#FFF;
+	margin:0px;
+	z-index:999;
+}
+
+
+nav #logo {
+	float:left;
+	display:inline-block;
+	font-size:14pt;
+	color:#212121;
+	margin-left:10px;
+	letter-spacing:2px;
+	padding:15px;
+	line-height:20px;
+	vertical-align:middle;
+}
+nav ul {
+		float:right;
+		display:inline-block;
+		margin-right:10px;
+		margin-top:20px;
+		list-style:none;
+		vertical-align:middle;}
+
+nav ul li {
+	display:inline-block;
+	vertical-align:middle;
+	line-height:14px;}
+
+nav ul li a {
+	color:#212121;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-size:8pt;
+	margin:5px 18px 0px 18px;
+	padding:18px 0px;
+	vertical-align:middle;
+	text-decoration:none;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	z-index: 1;}
+
+nav ul li a:hover  {
+	color:#EEEEEE;}
+
+#nav .selected a {
+    color:#00C255;}
+
+	
+nav li:last-child a {
+	border-right: 0;
+}
+
+.my-sticky-nav.stuck{
+	position:fixed;
+	top:0;
+}
+
+/* Mobile Navigation Display none if no iDevice */
+
+nav select {
+      display: none;
+    }
+
+/* 03. PORTFOLIO SECTION ================================================== */
+
+
+#who {
+	background-color:#EEE;
+	padding:70px 0px 50px;
+	margin:0px auto;
+	text-align:center;
+	display:block;}
+
+
+#who h2 {
+	color:#555;
+	font:40pt 'Montserrat', helvetica-neue, helvetica, arial, sans-serif;;
+	padding: 30px 0px 0px 0px;}
+
+/* 05. ABOUT SECTION ================================================== */
+
+#what {
+	background:#f5f5f5;
+	padding:70px 0px 50px;}
+	
+#what .inner {
+	width:100%;
+	height:100%;
+	margin:0px auto;
+	text-align:center;}
+
+#what h2 {
+	color:#555;
+	font:40pt 'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
+	padding: 30px 0px 0px 0px;}
+	
+/* 06. CONTACT SECTION ================================================== */
+
+
+#when-where {
+	background-color:#f9f9f9;
+	padding:70px 0px 50px;}
+
+#when-where h2 {
+	color:#555;
+	font:40pt 'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
+	padding: 30px 0px 0px 0px;}
+
+#when-where .row {
+	font-family:'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
+		line-height:24px;
+		color:#777;
+		font-size:14px;
+		margin-bottom:30px;
+		margin-top:30px;}
+
+#when-where .row .col1 {
+	width:55%;
+	padding:0px 3%;
+	display:inline-block;
+	vertical-align:text-top;
+	text-align:left;}
+
+#when-where .row .col2 {
+	width:35%;
+	display:inline-block;
+	vertical-align:text-top;
+	text-align:left;}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color:#C6C6C6;}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+	color:#C6C6C6;}
+	
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color:#C6C6C6;}
+	
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color:#ccc;}
+
+#contact .inner form .required {
+	color:#00aed7;}
+
+#contact .inner form .submit {
+	width:95%;
+	padding:5px 10px;
+	background-color:#1BB8D7;
+	height:40px;
+	text-transform:uppercase;
+	font-family:'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
+	letter-spacing:1px;
+	color:#FFF;
+	margin-top:20px;
+	border:2px solid #1BB8D7;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;}
+
+#contact .inner form .submit:hover {
+	color:#1BB8D7;
+	border:2px solid #1BB8D7;
+	background-color: #FFF;
+	cursor:pointer;}
+
+#contact .inner h4 {
+	color:#555;
+	font-family:'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:normal;
+	letter-spacing:1px;
+	margin-bottom:0px;
+	margin-top:35px;}
+	
+#contact .inner h4:first-child{
+	margin-top:0px;}
+
+
+#contact .inner a {
+	color:#00aed7;
+	letter-spacing:1px;
+	text-decoration:none;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;}
+
+#contact .inner a:hover {
+	color:#777;
+	text-decoration:none;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;}
+	
+/* 07. TWITTER MODULE ================================================== */
+
+#twitter_module {
+	background-color:#FFF;
+	padding:50px 0px 50px;
+	text-align:center;}
+
+.tweet_list {
+	overflow-y:hidden;
+	list-style:none;
+	margin:0;
+	padding:0}
+
+.tweet_list li {
+	overflow-x:hidden;
+	overflow-y:auto;
+	list-style-type:none}
+
+.tweet_list li a {
+	color:#333;
+	text-decoration:none;
+	border-bottom:1px dotted #333;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;}
+
+.tweet_list li a:hover {
+	color:#00aed7;
+	text-decoration:none;
+	border-bottom:1px dotted #00aed7;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;}
+
+.tweet_list .tweet_avatar {
+	display:none}
+
+.tweet_list .tweet_time a{
+	font-style:italic;
+	color:#999;
+	border-bottom:none;
+	font:12px 'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
+	margin-left: 10px;}
+
+.tweet_list li::before {
+	content: url(../images/twitter-icon2.png) ;}
+
+.tweet_list li img {
+	margin-bottom:-2px;}
+
+
+.tweet_list .tweet_avatar img {
+	vertical-align:middle;}
+
+#ticker ul.tweet_list {
+	overflow-y:hidden;
+	vertical-align:middle;
+	height:22px;
+	font:14px 'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
+	color:#333;}
+
+#ticker .tweet_list li {
+	overflow:hidden;
+	vertical-align:middle;
+	font:13px 'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
+	color:#666;
+	height:35px;}
+
+/* 08. SOCIAL MODULE ================================================== */
+
+#social_module {
+	background-color:#fFF;
+	padding:0px 0px 30px;
+	text-align:center;}
+
+
+#social_module a {
+	text-decoration: none;}
+
+#social_module  ul li{
+	list-style:none;
+	display:inline-block; 
+	padding: 0px 20px 0px 20px;}
+
+.icon{
+	font-family:"Socialico";
+	font-weight:400;
+	font-style:normal;
+	font-size:30px;
+	color:#777;
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-ms-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out}
+	
+.icon:hover{
+	color:#00aed7;}
+
+
+/* 09. FOOTER SECTION ================================================== */
+
+footer {
+	height:auto;
+	width:100%;
+	padding:20px 0px 20px 0;
+	background-color:#333;
+	font-family:'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
+	font-size:11px;
+	letter-spacing:1px;
+	position:static;
+	bottom:0px;
+	text-align:center;}
+
+
