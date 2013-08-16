@@ -129,6 +129,29 @@ header h1 {
     transition:         margin-top 0.8s ease-in-out;
 }
 
+.banner-images {
+    font-family:      'MagnetoBold', helvetica-neue, helvetica, arial, sans-serif;
+    font-size:         46pt;  
+    font-weight:       bold;  
+    display:           inline-block;
+    line-height:       70px;
+    height:            70px;
+    vertical-align:    middle;
+    overflow:          hidden;
+    color:             #FFFFFF;
+    padding: 0 10px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+    z-index: 999;
+}
+
+.banner-images div {
+    height:             70px;
+    -webkit-transition: margin-left 0.8s ease-in-out;
+    -moz-transition:    margin-left 0.8s ease-in-out;
+    -o-transition:      margin-left 0.8s ease-in-out;
+    transition:         margin-left 0.8s ease-in-out;
+}
+
 
 /* 02. NAVIGATION ================================================== */
 

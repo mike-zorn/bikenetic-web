@@ -1,3 +1,5 @@
+/* globals jQuery: false, $: false */
+
 /* -- TWITTER MAKE IT WORK ( JUST REMPLACE MY USERNAME BY YOURS -- */
 
 
@@ -62,7 +64,6 @@ $(window).scroll(function(){
 $(document).ready(function() {
 	$('.my-sticky-nav').waypoint('sticky');
 });
-
 
 
 /* -- ROLES OF HEADER -- */
