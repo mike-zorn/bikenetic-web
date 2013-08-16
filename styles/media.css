@@ -111,15 +111,6 @@ animation-delay: 0.3s;
 
 @media screen and (max-width: 1024px) {
 
-nav #logo {
-	float:left;
-	display:inline-block;
-	margin-left:0px;
-	letter-spacing:2px;
-	padding:20px 20px 20px 10px;
-	line-height:20px;
-	vertical-align:middle;
-}
 }
 
 
@@ -131,17 +122,19 @@ nav #logo {
 @media screen and (max-width: 960px) {
 
 header {
-	background: url('../images/background.jpg') center; 
+	background: url('http://sphotos-f.ak.fbcdn.net/hphotos-ak-ash4/466076_379895285452239_555699419_o.jpg') center; /* CHANGE HERE */
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;}
 
-	
 .roles {
     font-size: 20pt;  
 }
 
+  header h1 {
+    font-size:130px;
+  }
 
 #twitterwrap {
 	padding:30px 50px 30px;}
@@ -170,16 +163,21 @@ height:30px;
 
 
 @media screen and (max-width: 720px) {
-header {
-	background: url('http://sphotos-f.ak.fbcdn.net/hphotos-ak-ash4/466076_379895285452239_555699419_o.jpg') center; /* CHANGE HERE */
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;}
+  header {
+    background: url('http://sphotos-f.ak.fbcdn.net/hphotos-ak-ash4/466076_379895285452239_555699419_o.jpg') center; /* CHANGE HERE */
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
 
-.roles {
-    font-size:  20pt;  
-}
+  header h1 {
+    font-size:80px;
+  }
+
+  .roles {
+      font-size:  20pt;  
+  }
 
 }
 
@@ -190,13 +188,17 @@ header {
 @media screen and (max-width: 520px) {
 
 	
-header {
-	background: url('http://sphotos-f.ak.fbcdn.net/hphotos-ak-ash4/466076_379895285452239_555699419_o.jpg') center; /* CHANGE HERE */
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    }
+  header {
+    background: url('http://sphotos-f.ak.fbcdn.net/hphotos-ak-ash4/466076_379895285452239_555699419_o.jpg') center; /* CHANGE HERE */
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+
+  header h1 {
+    font-size: 60px;
+  }
 
 
 .lead {
