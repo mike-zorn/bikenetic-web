@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'MagnetoBold';
+    src: url('magnetob.eot');
+    src: url('magnetob.eot') format('embedded-opentype'),
+         url('magnetob.woff') format('woff'),
+         url('magnetob.ttf') format('truetype'),
+         url('magnetob.svg#MagnetoBold') format('svg');
+}
