@@ -1,0 +1,25 @@
+{
+  "name": "bikenetic-web",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Web page for a cool bike shop",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apechimp/bikenetic-web.git"
+  },
+  "keywords": [
+    "bike"
+  ],
+  "author": "Mike Atkins",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/apechimp/bikenetic-web/issues"
+  },
+  "dependencies": {
+    "express": "3.3.5"
+  }
+}

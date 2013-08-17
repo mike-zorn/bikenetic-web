@@ -1,3 +1,5 @@
 *.swp
 *.swo
 client_secret
+
+node_modules
