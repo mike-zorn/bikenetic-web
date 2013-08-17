@@ -3,7 +3,7 @@ node_js:
 - "0.10"
 after_success:
 - wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
-- git remote add heroku git@heroku.com:azamat.git
+- git remote add heroku git@heroku.com:bikenetic-web.git
 - echo "Host heroku.com" >> ~/.ssh/config
 - echo "   StrictHostKeyChecking no" >> ~/.ssh/config
 - echo "   CheckHostIP no" >> ~/.ssh/config
