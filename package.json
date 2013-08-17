@@ -4,9 +4,6 @@
   "version": "0.0.0",
   "description": "Web page for a cool bike shop",
   "main": "server.js",
-  "scripts": {
-    "test": "mocha"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/apechimp/bikenetic-web.git"
