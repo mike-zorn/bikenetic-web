@@ -2,6 +2,7 @@
 *.swp
 *.swo
 client_secret
+.DS_Store
 
 node_modules
 
