@@ -354,6 +354,31 @@ nav select {
 .icon:hover{
 	color:#00ec1c;}
 
+a svg {
+  display: block;
+}
+a object {
+  display: block;
+}
+
+#yelp-logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+}
+
+#path1404{
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-ms-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+	fill:#777;}
+
+a:hover #path1404{
+	fill:#00ec1c;
+}
+
 
 /* 09. FOOTER SECTION ================================================== */
 
