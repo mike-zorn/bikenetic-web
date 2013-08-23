@@ -1,6 +1,7 @@
 var express = require('express'),
     app = express(),
-    yelpImages = require('./yelp-images'),
+    yelpRating = require('./yelp-rating'),
+    svg = require('./svg'),
     port = process.env.PORT || 2000;
 
 app.engine('.html', require('ejs').__express);
@@ -10,8 +11,10 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.favicon(__dirname +"/public/img/favicon.ico"));
 
 app.get('/', function(req, res) {
-  console.log(yelpImages());
-  res.render('index', yelpImages());
+  res.render('index', {
+    yelpSvg: svg.yelp,
+    starsSvg: svg.getStarsForRating(yelpRating())
+  });
 });
 
 if(process.env.NODETIME_ACCOUNT_KEY) {

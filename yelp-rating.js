@@ -7,7 +7,7 @@ var config = require('./config'),
       token: config.yelp.token,
       token_secret: config.yelp.tokenSecret
     }),
-    yelpImageUrls;
+    yelpRating;
 
 
 function createInfiniteYelpPromise() {
@@ -15,8 +15,7 @@ function createInfiniteYelpPromise() {
     'bikenetic-full-service-bicycle-shop-falls-church').
   then(function(response) {
     console.log('yelp gave:', response);
-    yelpImageUrls = _.defaults(_.pick(response[0], 'rating_img_url'), 
-      {rating_img_url: '' });
+    yelpRating = response[0].rating
   }).
   fail(console.log.bind(console, 'error from yelp')).
   delay(360000). //check every hour
@@ -26,5 +25,5 @@ function createInfiniteYelpPromise() {
 createInfiniteYelpPromise();
 
 module.exports = function() {
-  return yelpImageUrls;
+  return yelpRating;
 }
