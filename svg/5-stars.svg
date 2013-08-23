@@ -53,7 +53,7 @@
        id="layer1-9"
        inkscape:label="Layer 1" />
     <rect
-       style="fill:#777777;fill-opacity:0.94117647"
+       class="starts-normal"
        id="rect5347"
        width="16"
        height="16"
@@ -64,7 +64,7 @@
        transform="translate(0,1036.3622)" />
     <path
        sodipodi:type="star"
-       style="fill:#00ec1c;fill-opacity:0.94117647"
+       class="starts-dark turns-green"
        id="path5349"
        sodipodi:sides="5"
        sodipodi:cx="0.044642858"
@@ -92,7 +92,7 @@
        height="16"
        width="16"
        id="rect5921"
-       style="fill:#777777;fill-opacity:0.94117647" />
+       class="starts-normal" />
     <path
        inkscape:transform-center-y="-0.58934363"
        inkscape:transform-center-x="0.13801324"
@@ -109,14 +109,14 @@
        sodipodi:cx="0.044642858"
        sodipodi:sides="5"
        id="path5923"
-       style="fill:#00ec1c;fill-opacity:0.94117647"
+       class="starts-dark turns-green"
        sodipodi:type="star" />
     <g
        transform="translate(34,-0.09013091)"
        id="g5925"
        inkscape:label="Layer 1" />
     <rect
-       style="fill:#777777;fill-opacity:0.94117647"
+       class="starts-normal"
        id="rect5927"
        width="16"
        height="16"
@@ -126,7 +126,7 @@
        ry="2" />
     <path
        sodipodi:type="star"
-       style="fill:#00ec1c;fill-opacity:0.94117647"
+       class="starts-dark turns-green"
        id="path5929"
        sodipodi:sides="5"
        sodipodi:cx="0.044642858"
@@ -154,7 +154,7 @@
        height="16"
        width="16"
        id="rect5933"
-       style="fill:#777777;fill-opacity:0.94117647" />
+       class="starts-normal" />
     <path
        inkscape:transform-center-y="-0.58934363"
        inkscape:transform-center-x="0.13801324"
@@ -171,7 +171,7 @@
        sodipodi:cx="0.044642858"
        sodipodi:sides="5"
        id="path5935"
-       style="fill:#00ec1c;fill-opacity:0.94117647"
+       class="starts-dark turns-green"
        sodipodi:type="star" />
     <rect
        ry="2"
@@ -181,7 +181,7 @@
        height="16"
        width="16"
        id="rect5937"
-       style="fill:#777777;fill-opacity:0.94117647" />
+       class="starts-normal" />
     <path
        inkscape:transform-center-y="-0.58934363"
        inkscape:transform-center-x="0.13801324"
@@ -198,10 +198,10 @@
        sodipodi:cx="0.044642858"
        sodipodi:sides="5"
        id="path5939"
-       style="fill:#00ec1c;fill-opacity:0.94117647"
+       class="starts-dark turns-green"
        sodipodi:type="star" />
     <rect
-       style="fill:#777777;fill-opacity:0.94117647"
+       class="starts-normal"
        id="rect5941"
        width="16"
        height="16"
@@ -211,7 +211,7 @@
        ry="2" />
     <path
        sodipodi:type="star"
-       style="fill:#00ec1c;fill-opacity:0.94117647"
+       class="starts-dark turns-green"
        id="path5943"
        sodipodi:sides="5"
        sodipodi:cx="0.044642858"

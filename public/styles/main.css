@@ -354,10 +354,7 @@ nav select {
 .icon:hover{
 	color:#00ec1c;}
 
-a svg {
-  display: block;
-}
-a object {
+#social_module a svg {
   display: block;
 }
 
@@ -367,11 +364,25 @@ a object {
   margin-bottom: 2px;
 }
 
-#path1404{
+svg .starts-normal {
 	fill:#777;
 }
 
-a:hover #path1404{
+svg .starts-dark {
+  fill: #ccc;
+}
+
+svg .starts-normal.slightly-darker {
+	fill:#555;
+}
+
+a:hover svg .turns-green.slightly-darker{
+	fill:#00ca0a;
+  transition-property: fill;
+  transition-duration: .5s;
+}
+
+a:hover svg .turns-green{
 	fill:#00ec1c;
   transition-property: fill;
   transition-duration: .5s;

@@ -10,7 +10,6 @@ var fs = require('fs'),
 module.exports = {
   yelp: fs.readFileSync(__dirname+'/yelp.svg'),
   getStarsForRating: function(rating) {
-    console.log(rating);
     if(rating === 5) {
       return stars.stars5;
     } else if(rating === 4.5) {
