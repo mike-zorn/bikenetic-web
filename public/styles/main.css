@@ -327,7 +327,7 @@ nav select {
 
 #social_module {
 	background-color:#111;
-	padding:0px 0px 30px;
+	padding:0px 10px 30px;
 	text-align:center;}
 
 
@@ -369,7 +369,7 @@ svg .starts-normal {
 }
 
 svg .starts-dark {
-  fill: #ccc;
+  fill: #111;
 }
 
 svg .starts-normal.slightly-darker {
