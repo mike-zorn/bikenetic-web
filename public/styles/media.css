@@ -169,10 +169,6 @@ header h1 {
 #wrapper {
 	position:absolute;
 	width:100%;}
-#about .inner h2,
-#when-where .inner h2,
-#portfolio h2 {
-	font:20pt/1.5 'Montserrat', helvetica-neue, helvetica, arial, sans-serif;}
 
 
 }
@@ -198,11 +194,6 @@ header {
 	
 header h1 {
 	font-size:30pt;}
-#about .inner h2,
-#when-where .inner h2,
-#portfolio h2 {
-	font:20pt/1.5 'Montserrat', helvetica-neue, helvetica, arial, sans-serif;}
-}
 
 /* 07. iPads (landscape) ----------- */
 
