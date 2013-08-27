@@ -190,6 +190,10 @@ nav img {
   margin: 5px 5px 0px 0px;
 }
 
+nav #menu-icon {
+  display: none;
+}
+
 nav ul {
 		float:right;
 		display:inline-block;
