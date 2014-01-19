@@ -77,33 +77,6 @@ body, html {
 	-o-transition: all 0.3s;
 }
 
-.holiday {
-  color: red;
-  font-size:14px;
-}
-
-#holiday-hours:hover {
-  color: #00ec1c;
-}
-
-#holiday-hours {
-	font-family:'MagnetoBold', helvetica-neue, helvetica, arial, sans-serif;
-  font-size: 40px;
-  color: red;
-}
-
-.holiday table {
-	font-family:'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
-  line-height:24px;
-  margin-bottom:15px;
-  margin-top:15px;
-	width:35%;
-	padding:0px 3%;
-	display:inline-block;
-	vertical-align:text-top;
-	text-align:justify;
-}
-
 .lead a:hover {
 	color:#777;
 }
@@ -314,12 +287,11 @@ nav select {
 
 #when-where .row {
 	font-family:'Montserrat', helvetica-neue, helvetica, arial, sans-serif;
-  line-height:24px;
-  color:#777;
-  font-size:14px;
-  margin-bottom:30px;
-  margin-top:30px;
-}
+		line-height:24px;
+		color:#777;
+		font-size:14px;
+		margin-bottom:30px;
+		margin-top:30px;}
 
 #when-where .row .col1 {
 	width:35%;
