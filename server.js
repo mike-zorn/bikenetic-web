@@ -1,6 +1,7 @@
 var express = require('express'),
     app = express(),
-    yelpRating = require('./yelp-rating'),
+    yelpRating = require('./lib/yelp-rating'),
+    facebookAlert = require('./lib/facebook-alert'),
     svg = require('./svg'),
     port = process.env.PORT || 2000;
 
@@ -13,7 +14,8 @@ app.use(express.favicon(__dirname +"/public/img/favicon.ico"));
 app.get('/', function(req, res) {
   res.render('index', {
     yelpSvg: svg.yelp,
-    starsSvg: svg.getStarsForRating(yelpRating())
+    starsSvg: svg.getStarsForRating(yelpRating()),
+    alert: facebookAlert()
   });
 });
 
