@@ -107,7 +107,6 @@ header {
 	text-align:center;
 	color:#00ec1c;
 	position:absolute;
-	background:url('http://sphotos-f.ak.fbcdn.net/hphotos-ak-ash4/466076_379895285452239_555699419_o.jpg') no-repeat center center fixed;  /* DONT FORGET TO CHANGE IT TOO IN MEDIA.CSS */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
