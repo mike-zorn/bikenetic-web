@@ -2,6 +2,7 @@ var express = require('express'),
     app = express(),
     yelpRating = require('./lib/yelp-rating'),
     facebookAlert = require('./lib/facebook-alert'),
+    facebookPhotos = require('./lib/facebook-photos'),
     svg = require('./svg'),
     port = process.env.PORT || 2000;
 
@@ -15,7 +16,8 @@ app.get('/', function(req, res) {
   res.render('index', {
     yelpSvg: svg.yelp,
     starsSvg: svg.getStarsForRating(yelpRating()),
-    alert: facebookAlert()
+    alert: facebookAlert(),
+    photos: facebookPhotos()
   });
 });
 

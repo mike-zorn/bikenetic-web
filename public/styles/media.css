@@ -61,7 +61,6 @@ animation-delay: 0.3s;
 @media screen and (max-width: 960px) {
 
 header {
-	background: url('http://sphotos-f.ak.fbcdn.net/hphotos-ak-ash4/466076_379895285452239_555699419_o.jpg') center; /* CHANGE HERE */
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -88,7 +87,6 @@ header {
 
 @media screen and (max-width: 720px) {
   header {
-    background: url('http://sphotos-f.ak.fbcdn.net/hphotos-ak-ash4/466076_379895285452239_555699419_o.jpg') center; /* CHANGE HERE */
     -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -113,7 +111,6 @@ header {
 
 	
   header {
-    background: url('http://sphotos-f.ak.fbcdn.net/hphotos-ak-ash4/466076_379895285452239_555699419_o.jpg') center; /* CHANGE HERE */
     -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
