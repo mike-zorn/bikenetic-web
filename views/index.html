@@ -202,43 +202,12 @@ Falls Church, VA"/>
           <h3>Operating Hours</h3>
 
           <table>
-            <tr>
-              <td>Monday:</td>
-              <td>11am-8pm</td>
-            </tr>
-            <tr>
-              <td>Tuesday:</td>
-              <td>11am-8pm</td>
-            </tr> 
-            <tr><td colspan="2"><a class="group-ride" 
-              href="http://www.more-mtb.org/forums/topic/bikenetic-tuesday-moderate-ride/">
-              Group Ride: 6:30pm</a>
-          </td>
-          </tr>
-          <tr>
-            <td>Wednesday:</td>
-            <td>11am-8pm</td>
-          </tr>
-          <tr>
-            <td>Thursday:</td>
-            <td>11am-8pm</td>
-          </tr>
-          <tr>
-            <td>Friday:</td>
-            <td>11am-8pm</td>
-          </tr>
-          <tr>
-            <td>Saturday:</td>
-            <td>10am-6pm</td></tr>
-          <tr>
-            <td>Sunday:</td>
-            <td>12pm-4pm</td>
-          </tr>
-            <tr><td colspan="2"><a class="group-ride" 
-              href="http://www.facebook.com/bikenetic">
-              Group Ride: 8:00am</a>
-          </td>
-          </tr>
+            <% hours.forEach(function (dayHours) { %>
+              <tr>
+                <td><%= dayHours.day %></td>
+                <td><%= dayHours.hours %></td>
+              </tr>
+            <% }) %>
           </table>
 
         </div>

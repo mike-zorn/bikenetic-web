@@ -1,32 +1,28 @@
-var express = require('express'),
-    app = express(),
-    yelpRating = require('./lib/yelp-rating'),
-    facebookAlert = require('./lib/facebook-alert'),
-    facebookPhotos = require('./lib/facebook-photos'),
-    svg = require('./svg'),
-    port = process.env.PORT || 2000;
+const express = require('express')
+const app = express()
+const hours = require('./lib/hours')
+// const yelpRating = require('./lib/yelp-rating')
+const facebookAlert = require('./lib/facebook-alert')
+const facebookPhotos = require('./lib/facebook-photos')
+const svg = require('./svg')
+const path = require('path')
+const port = process.env.PORT || 2000
 
-app.engine('.html', require('ejs').__express);
-app.set('view engine', 'html');
+app.engine('.html', require('ejs').__express)
+app.set('view engine', 'html')
 
-app.use(express.static(__dirname + "/public"));
-app.use(express.favicon(__dirname +"/public/img/favicon.ico"));
+app.use(express.static(path.join(__dirname, '/public')))
+app.use(express.favicon(path.join(__dirname, '/public/img/favicon.ico')))
 
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
   res.render('index', {
-    yelpSvg: svg.yelp,
-    starsSvg: svg.getStarsForRating(yelpRating()),
     alert: facebookAlert(),
-    photos: facebookPhotos()
-  });
-});
+    hours: hours,
+    photos: facebookPhotos(),
+    starsSvg: 5,// svg.getStarsForRating(yelpRating()),
+    yelpSvg: svg.yelp
+  })
+})
 
-if(process.env.NODETIME_ACCOUNT_KEY) {
-  require('nodetime').profile({
-    accountKey: process.env.NODETIME_ACCOUNT_KEY,
-    appName: 'bikenetic-web'
-  });
-}
-
-app.listen(port);
-console.log('Up & running @', port);
+app.listen(port)
+console.log('Up & running @', port)
