@@ -1,9 +1,9 @@
 [
-  { "day": "Monday", "hours": [1100, 2000] },
-  { "day": "Tuesday", "hours": [1100, 2000] },
-  { "day": "Wednesday", "hours": [1100, 2000] },
-  { "day": "Thursday", "hours": [1100, 2000] },
-  { "day": "Friday", "hours": [1100, 2000] },
-  { "day": "Saturday", "hours": [1000, 1800] },
-  { "day": "Sunday", "hours": [1200, 1600] }
+  { "day": "Monday", "hours": [11, 8] },
+  { "day": "Tuesday", "hours": [11, 8] },
+  { "day": "Wednesday", "hours": [11, 8] },
+  { "day": "Thursday", "hours": [11, 8] },
+  { "day": "Friday", "hours": [11, 8] },
+  { "day": "Saturday", "hours": [10, 6] },
+  { "day": "Sunday", "hours": [12, 4] }
 ]

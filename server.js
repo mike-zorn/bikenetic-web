@@ -4,6 +4,8 @@ const hours = require('./lib/hours')
 // const yelpRating = require('./lib/yelp-rating')
 const facebookAlert = require('./lib/facebook-alert')
 const facebookPhotos = require('./lib/facebook-photos')
+const locationHtml = require('./lib/location-html')
+const locationUrl = require('./lib/location-url')
 const svg = require('./svg')
 const path = require('path')
 const port = process.env.PORT || 2000
@@ -18,6 +20,8 @@ app.get('/', function (req, res) {
   res.render('index', {
     alert: facebookAlert(),
     hours: hours,
+    locationHtml: locationHtml,
+    locationUrl: locationUrl,
     photos: facebookPhotos(),
     starsSvg: 5,// svg.getStarsForRating(yelpRating()),
     yelpSvg: svg.yelp

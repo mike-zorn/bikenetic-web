@@ -107,29 +107,9 @@ Falls Church, VA"/>
     competively and efficiently.
     </p>
 
-	</div>
-
-  </section>
-
-  <section id="bikes">
     <% include bikes %>
 
-    <h3>Service</h3>
-
-    <p class="copy">
-    The other thing we're known for besides our new bike maintenance policy! If
-    you purchased your bicycle elsewhere, we will provide you with our
-    outstanding service at a reasonable rate in the shortest amount of time
-    possible.
-    </p>
-
-    <p class="copy">
-    Our service facility is located conveniently inside our back door entrance
-    right from the parking lot. Our dedicated service check-in counter means
-    you will talk with someone who understands bicycle repair when you arrive
-    and provide recommendations on what your bike will need to hit the trails
-    safely and securely.
-    </p>
+    <% include service %>
 
   </div>
 
@@ -167,9 +147,7 @@ Falls Church, VA"/>
           <h3>Location</h3>
 
           <p>
-          922 West Broad Street
-          <br>
-          Falls Church, VA 22046
+          <%- locationHtml %>
           </p>
 
           <p>
@@ -181,7 +159,7 @@ Falls Church, VA"/>
           </p>
 
           <div class="map">
-            <iframe height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=922%2BWest%2BBroad%2BStreet%2BFalls%2BChurch%2C%2BVA%2B22046(Bikenetic)&ie=UTF8&z=13&t=m&iwloc=addr&output=embed"></iframe>
+            <iframe height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<%- locationUrl %>"></iframe>
           </div>
 
         </div>
