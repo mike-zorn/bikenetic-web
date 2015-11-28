@@ -1,0 +1,9 @@
+[
+  { "day": "Monday", "hours": [11, 8] },
+  { "day": "Tuesday", "hours": [11, 8] },
+  { "day": "Wednesday", "hours": [11, 8] },
+  { "day": "Thursday", "hours": [11, 8] },
+  { "day": "Friday", "hours": [11, 8] },
+  { "day": "Saturday", "hours": [10, 6] },
+  { "day": "Sunday", "hours": [12, 4] }
+]
