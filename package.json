@@ -20,7 +20,7 @@
     "node": "^4"
   },
   "scripts": {
-    "prepublish": "bin/compile-md.sh",
+    "postinstall": "bin/compile-md.sh",
     "start": "node server",
     "test": "standard"
   },
