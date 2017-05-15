@@ -1,6 +1,8 @@
 bikenetic-web
 =============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/apechimp/bikenetic-web.svg)](https://greenkeeper.io/)
+
 Downloading
 -----------
 
